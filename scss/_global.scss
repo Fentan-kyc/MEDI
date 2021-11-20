@@ -1,0 +1,54 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.wrapper{
+    min-height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+body{
+    height: 100%;
+
+    background: #fff;
+    color: #000;
+
+    font-family: 'Gilroy';
+    font-weight: 500;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+
+.main{
+    flex: 1 1 auto;
+}
+
+.container{
+    max-width: 1295px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+li,
+ol {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
