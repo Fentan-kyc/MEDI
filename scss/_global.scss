@@ -15,8 +15,12 @@
     flex-direction: column;
 }
 
+html,
 body{
-    height: 100%;
+  height: 100%;
+}
+
+body{
 
     background: #fff;
     color: #000;
@@ -34,7 +38,7 @@ body{
 }
 
 .container{
-    max-width: 1295px;
+    max-width: 1305px;
     padding: 0 10px;
     margin: 0 auto;
 }
@@ -51,4 +55,17 @@ ol {
 
 img {
   vertical-align: top;
+}
+
+.ibg{
+  position: relative;
+
+  img{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      object-fit: cover;
+  }
 }

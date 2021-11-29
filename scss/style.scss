@@ -1,6 +1,38 @@
 @import "global";
 @import "fonts";
 
-.flex{
-    margin-top: auto;
+
+/*========================Globals==================================*/
+
+
+$first_color: #fff;
+
+
+
+
+/*=============================Blocks======================================*/
+
+.menu{
+    
+}
+
+/*===========================Header=============================*/
+
+.header{
+    font-size: 16px;
+    line-height: 18px;
+}
+
+.header__container{
+
+}
+
+.header__menu{
+
+}
+
+/*======================Footer=========================*/
+.footer{
+    background: gray;
+    color: #fff;
 }
