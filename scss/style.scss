@@ -113,7 +113,18 @@ $second_color: #4FBFA5;
 
 /*========================Main-block=========================*/
 
+.block{
+    color: #fff;
+}
 
+.block__title{
+    font-size: 48px;
+    line-height: 72px;
+}
+
+.block__text{
+    max-width: 416px;
+}
 
 /*======================Footer=========================*/
 .footer{
