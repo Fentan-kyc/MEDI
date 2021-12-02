@@ -5,16 +5,13 @@
 /*========================Globals==================================*/
 
 
-$first_color: #fff;
+$first_color: #00868A;
+$second_color: #4FBFA5;
 
 
 
 
 /*=============================Blocks======================================*/
-
-.menu{
-    
-}
 
 .menu__list{
     display: flex;
@@ -25,17 +22,62 @@ $first_color: #fff;
 
 .menu__item{
     flex-grow: 1;
-    border-left: 1px solid #C4C4C4;
-
-}
-
-.menu__logo{
-    padding: 0;
 }
 
 .menu__social{
     padding: 33px 28px;
     flex-grow: 0;
+}
+
+.menu__item-registration{
+    flex-grow: 0;
+    margin-left: 72px;
+}
+
+.link-list{
+    position: relative;
+    padding-right: 28px;
+    &::after{
+        position: absolute;
+        content: ' ';
+        top: 0;
+        right: 0;
+        height: 20px;
+        width: 20px;
+        background-image: url('../img/group.svg');
+    }
+}
+
+.btn{
+    border: 0;
+
+    &__visually-impaired{
+        padding: 10px 15px 10px 41px;
+        background-color: $first_color;
+        color: #fff;
+        position: relative;
+
+        &::before{
+            position: absolute;
+            top: 9px;
+            left: 11px;
+            content: ' ';
+            width: 26px;
+            height: 22px;
+            background-image: url('../img/simple-line-icons_eye.svg');
+        }
+
+        &:hover{
+            background-color: #044d50;
+            transition: .3s;
+        }
+    }
+
+    &_theme_white{
+        color: #000;
+        background-color: #fff;
+        padding: 10px 15px;
+    }
 }
 
 /*===========================Header=============================*/
@@ -45,13 +87,33 @@ $first_color: #fff;
     line-height: 18px;
 }
 
-.header__container{
-
-}
-
 .header__menu{
-
+    .menu__list{
+        .menu__item{
+    border-left: 1px solid #C4C4C4;
+    &:last-child{
+        border-right: 1px solid #C4C4C4;
+    }
+    }
 }
+}
+
+/*======================Main=============================*/
+
+.main__header{
+    background-color: $second_color;
+}
+
+.main_menu{
+    padding: 24px 0;
+    font-size: 18px;
+    line-height: 21px;
+    color: #fff;
+}
+
+/*========================Main-block=========================*/
+
+
 
 /*======================Footer=========================*/
 .footer{
