@@ -16,6 +16,28 @@ $first_color: #fff;
     
 }
 
+.menu__list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.menu__item{
+    flex-grow: 1;
+    border-left: 1px solid #C4C4C4;
+
+}
+
+.menu__logo{
+    padding: 0;
+}
+
+.menu__social{
+    padding: 33px 28px;
+    flex-grow: 0;
+}
+
 /*===========================Header=============================*/
 
 .header{
